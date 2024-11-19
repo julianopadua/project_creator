@@ -195,8 +195,7 @@ with open(script_path, 'w') as file:
     ```python
     script_content = f'''# Made by {your_name}
 # Additional code...
-'''
-    ```
+
   - **Update Initialization Message**: Customize the print statement as desired.
 
 ### README.md Template Creation
@@ -227,32 +226,6 @@ with open(os.path.join(project_path, 'README.md'), 'w') as file:
   - **Customize the Template**: Modify the `readme_content` string to include additional sections like Features, License, or Contact Information.
     ```python
     readme_content = f'''# {project_name}
-
-## Introduction
-
-*Your introduction here.*
-
-## Features
-
-*List your project features here.*
-
-## Installation
-
-*Provide installation instructions.*
-
-## Usage
-
-*Explain how to use your project.*
-
-## License
-
-*Include license information.*
-
-## Contact
-
-*Provide contact information.*
-'''
-    ```
 
 ## Customization Guide
 
