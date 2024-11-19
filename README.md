@@ -48,15 +48,7 @@ This project presents a Python-based solution designed to automate the initializ
      - **Base Path**: Enter the directory where you want the project to be created.
      - **Project Name**: Enter the desired name for your project.
 
-3. **Install Dependencies**:
-
-   Navigate to the created project directory and install the required Python packages:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. **Customize Your Project**:
+3. **Customize Your Project**:
 
    - Edit the `config.yaml` file in the `src/` directory to adjust configuration settings as needed.
    - Add your code to the `<project_name>.py` script in the `src/` directory.
