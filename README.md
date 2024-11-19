@@ -4,6 +4,7 @@
 
 <div align="center">
   <img src="images/default_folder_structure.png" alt="Default Folder Structure" width="500"/>
+  <h4>Figure 1: Architecture Diagram</h4>
 </div>
 
 ## Introduction
