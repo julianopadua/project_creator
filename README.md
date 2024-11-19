@@ -1,4 +1,7 @@
 ---
+title: "Project Initialization Script"
+description: "A Python script to automate project directory structure creation."
+---
 
 # Project Initialization Script
 
@@ -63,4 +66,3 @@ This project presents a Python-based solution designed to automate the initializ
 
 This project serves as a foundational tool to streamline the setup of new projects by automating the creation of a standardized directory structure and initializing essential files. It enhances productivity by reducing setup time and ensures consistency across different projects, which is particularly beneficial in collaborative or academic environments.
 
----
