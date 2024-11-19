@@ -1,7 +1,3 @@
----
-title: "Project Initialization Script"
-description: "A Python script to automate project directory structure creation."
----
 
 # Project Initialization Script
 
