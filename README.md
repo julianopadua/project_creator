@@ -3,7 +3,8 @@
 # Project Initialization Script
 
 <div align="center">
-  <img src="images/default_folder_structure.png" alt="Default Folder Structure" width="600"/>
+  <img src="images/default_folder_structure.png" alt="Default Folder Structure" width="500"/>
+  <p><small><em>Figure 1: default folder strucutre.</em></small></p>
 </div>
 
 ## Introduction
