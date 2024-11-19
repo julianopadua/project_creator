@@ -4,7 +4,7 @@
 
 <div align="center">
   <img src="images/default_folder_structure.png" alt="Default Folder Structure" width="500"/>
-  <p><small><em>Figure 1: default folder strucutre.</em></small></p>
+  <h4>Figure 1: default folder strucutre.</h4>
 </div>
 
 ## Introduction
