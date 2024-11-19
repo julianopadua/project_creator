@@ -41,7 +41,7 @@ This project presents a Python-based solution designed to automate the initializ
 2. **Run the Initialization Script**:
 
    ```bash
-   python create_project.py
+   python project_creator.py
    ```
 
    - **Input Prompts**:
