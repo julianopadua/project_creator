@@ -2,7 +2,9 @@
 
 # Project Initialization Script
 
-![Default Folder Structure](images/default_folder_structure.png)
+<div align="center">
+  <img src="images/default_folder_structure.png" alt="Default Folder Structure" width="600"/>
+</div>
 
 ## Introduction
 
