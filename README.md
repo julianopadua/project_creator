@@ -4,8 +4,9 @@
 
 <div align="center">
   <img src="images/default_folder_structure.png" alt="Default Folder Structure" width="500"/>
+  <h4>Figure 1: Architecture Diagram</h4>
 </div>
-<h4>Figure 1: Architecture Diagram</h4>
+
 ## Introduction
 
 This project presents a Python-based solution designed to automate the initialization of a standardized project directory structure. By executing a single script, users can generate a comprehensive folder hierarchy along with essential starter files, facilitating a consistent and efficient workflow for data analysis, software development, or research projects.
