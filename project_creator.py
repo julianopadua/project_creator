@@ -1,14 +1,12 @@
 import os
-import datetime  # Added import for datetime
+import datetime
 
+# remove any enclosing quotes from the path
 def sanitize_path(path):
-    # remove any enclosing quotes from the path
     return path.strip('\'"')
 
 def create_project_structure(base_path, project_name):
-    # sanitize the base path
     base_path = sanitize_path(base_path)
-        # print date and time when the project was initialized
     current_datetime = datetime.datetime.now()
 
     # create the main project directory
@@ -51,7 +49,7 @@ paths:
     with open(os.path.join(directories['src'], 'config.yaml'), 'w') as file:
         file.write(config_content)
     
-    # create the main Python script
+    # create the main .py script
     script_content = f'''# Made by Juliano E. S. Padua
 import pandas as pd
 import matplotlib.pyplot as plt
