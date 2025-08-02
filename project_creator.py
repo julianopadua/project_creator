@@ -56,30 +56,51 @@ paths:
 import pandas as pd
 import matplotlib.pyplot as plt
 import datetime
-import os
-import yaml
+from utils import load_config
 
-script_dir = os.path.dirname(os.path.abspath(__file__))
-config_dir = os.path.join(script_dir, "..", "config.yaml")
-
-# load configuration
-with open(config_dir, 'r') as config_file:
-    config = yaml.safe_load(config_file)
+paths, config = load_config()
 
 # initialize paths from config
-data_raw_path = os.path.join(script_dir, config['paths']['data_raw'])
-data_processed_path = os.path.join(script_dir, config['paths']['data_processed'])
-images_path = os.path.join(script_dir, config['paths']['images'])
-report_path = os.path.join(script_dir, config['paths']['report'])
-addons_path = os.path.join(script_dir, config['paths']['addons'])
-
+data_raw_path = paths["data_raw"]
+data_processed_path = paths["data_processed"]
+images_path = paths["images"]
+report_path = paths["report"]
+addons_path = paths["addons"]
 # your code starts here
 current_datetime = datetime.datetime.now()
-print(f"Project '{project_name}' initialized on {{current_datetime.strftime('%Y-%m-%d %H:%M:%S')}}")
+
+# Project '{project_name}' initialized on {current_datetime.strftime('%Y-%m-%d %H:%M:%S')}
 '''
     script_path = os.path.join(directories['src'], f'{project_name}.py')
     with open(script_path, 'w') as file:
         file.write(script_content)
+
+    # Cria utils.py dentro de src com a função load_config
+    utils_content = '''import os
+import yaml
+
+def load_config():
+    """Carrega config.yaml do diretório raiz e resolve caminhos relativos."""
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    config_path = os.path.join(script_dir, "..", "config.yaml")
+
+    with open(config_path, 'r') as file:
+        config = yaml.safe_load(file)
+
+    paths = {
+        "script_dir": script_dir,
+        "data_raw": os.path.join(script_dir, config["paths"]["data_raw"]),
+        "data_processed": os.path.join(script_dir, config["paths"]["data_processed"]),
+        "images": os.path.join(script_dir, config["paths"]["images"]),
+        "report": os.path.join(script_dir, config["paths"]["report"]),
+        "addons": os.path.join(script_dir, config["paths"]["addons"]),
+    }
+
+    return paths, config
+'''
+    utils_path = os.path.join(directories['src'], 'utils.py')
+    with open(utils_path, 'w') as file:
+        file.write(utils_content)
 
     # Cria README.md
     readme_content = f'''# {project_name}
